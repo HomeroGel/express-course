@@ -8,7 +8,7 @@ app.use(express.json()) //Metodo que permite que express procese el json que le 
 app.use(express.urlencoded({extended:false})) //para que express entienda datos que vienen desde un form
 
 
-app.post('/user', (req, res)=>{ //post para enviar datos desde el cliente y recibirlo en el server
+app.post('/user', (req, res)=>{ //post para enviar datos desde el cliente y recibirlo en el serverr
     console.log(req.body)
     res.send('Nuevo usuario creado')
 }) 
