@@ -16,6 +16,7 @@
 const express = require('express')
 const app = express()
 
+app.use(express.json())
 
 
 app.get('/products', (req,res)=>{
@@ -24,6 +25,11 @@ app.get('/products', (req,res)=>{
 
 app.post('/products', (req,res)=>{
     res.send('Creating products.')
+})
+
+app.post('/prices', (req, res)=>{
+    console.log(req.body)
+    res.send('List of prices:')
 })
 
 app.put('/products', (req,res)=>{
