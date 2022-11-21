@@ -25,7 +25,7 @@ app.get('/products', (req,res)=>{
 
 app.post('/products', (req,res)=>{
     res.send('Creating products.')
-})
+})//hh
 
 app.post('/prices', (req, res)=>{
     console.log(req.body)
