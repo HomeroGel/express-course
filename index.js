@@ -16,8 +16,20 @@
 const express = require('express')
 const app = express()
 
+require('ejs') //Me sirve para renderizar archivos html completos.
+
 app.use(express.json())
 
+//CONFIGURACION EJS
+app.set('view engine', 'ejs')//Uso el motor de vistas, y coloco ejs
+app.set('views', path.join(__dirname, 'views')) //Empieza desde la ruta absoluta, y lo concatena con la carpeta views.
+
+
+app.get('/ejs', (req, res)=>{
+    res.render('index')
+})
+
+//----------------------------------
 
 app.get('/products', (req,res)=>{
     res.send('List of products:')

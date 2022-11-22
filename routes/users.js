@@ -1,16 +1,16 @@
-const express = require('express')
-const router = express.Router()
+// const express = require('express')
+// const router = express.Router()
 
-router.get("/UserName", (req, res)=>{
-    res.send("Username route")
-})
+// router.get("/UserName", (req, res)=>{
+//     res.send("Username route")
+// })
 
-router.post("/profile", (req, res)=>{
-    console.log(req.body)
-    res.send("profile page")
-})
+// router.post("/profile", (req, res)=>{
+//     console.log(req.body)
+//     res.send("profile page")
+// })
 
-module.exports = router
+// module.exports = router
 
 // Luego donde quiera usarlas, seria
 
