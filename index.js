@@ -26,7 +26,7 @@ app.set('views', path.join(__dirname, 'views')) //Empieza desde la ruta absoluta
 
 
 app.get('/ejs', (req, res)=>{
-    res.render('index')
+    res.render('index') //renderizo el archivo index
 })
 
 //----------------------------------
